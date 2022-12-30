@@ -1,0 +1,41 @@
+//EX8.1
+
+-- int primes = {2, 3, 4, 5, 7, 11};
+Invalid because the brackets are missing.
+
+-- float elapsedTime[] = (11.47, 12.04, 11.72, 13.86);
+Valid because this is correct Java syntax.
+
+-- int[] scores = int[30];
+Invalid because it is missing "new" before "int[30]".
+
+-- int[] primes = new (2,3,5,7,11);
+Invalid because when using an initializer list, "new" is
+not necessary.
+
+-- int[] scores = new int[30];
+Valid because this is correct Java syntax.
+
+-- char grades[] = {'a', 'b', 'c', 'd', 'f'};
+Valid because this is correct Java syntax.
+
+-- char[] grades = new char[];
+Invalid because the side of the array is not defined when
+the array is instantiated. Defining a size in
+"new char[SIZE]" by changing "SIZE" would fix this.
+
+//EX8.4
+The problem(s) that occur with the following code is
+due to its failure to print the 0th term and the 11th term
+of the array. To fix this, you must initialize the count at
+0 instead of 1.
+
+
+//EX8.9
+public float sumArray(float[] values)
+{
+	float sum = 0
+	for (int n=0; n<values.length; n++)
+		sum += value[n];
+	return sum;
+}
